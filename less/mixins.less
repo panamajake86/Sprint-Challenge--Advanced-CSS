@@ -1,1 +1,21 @@
 // Mixins Here
+
+.corner(){
+    border-radius: 5px;
+}
+
+.center(){
+    display: flex;
+    align-items: center;
+}
+
+.btn-sty(@bg-color, @color){
+    width: 10rem;
+    height: 3.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8rem;
+    .corner();
+    border: 1px solid @ebony-clay;
+    background-color: @bg-color;
+    color: @color; 
+}

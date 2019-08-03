@@ -58,6 +58,14 @@
       }
 
       .btn {
+
+        button{
+          .btn-sty(@header-font-color, @porcelain);
+        }//button
+
+        button:hover{
+          .btn-sty(@porcelain, @header-font-color);
+        }//button:hover
       }
     }
 
